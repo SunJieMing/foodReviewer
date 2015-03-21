@@ -14,4 +14,13 @@ angular.module('foodReviewerApp')
       'AngularJS',
       'Karma'
     ];
+  })
+  
+.config(function($stateProvider) {
+  $stateProvider
+  .state('main', {
+    url: '/',
+    templateUrl: '/views/main/main.html',
+    controller: 'MainCtrl'
   });
+});
